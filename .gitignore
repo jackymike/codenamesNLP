@@ -1,0 +1,87 @@
+###########################
+# Python Virtual Environments
+###########################
+.venv/
+venv/
+env/
+ENV/
+
+###########################
+# Python Bytecode
+###########################
+__pycache__/
+*.py[cod]
+*$py.class
+
+###########################
+# Build / Distribution
+###########################
+build/
+dist/
+*.egg-info/
+.eggs/
+*.whl
+
+###########################
+# Project Artifacts
+###########################
+# Model weights
+*.pt
+*.pth
+*.ckpt
+
+# Embedding files or large data
+data/
+*.bin
+*.vec
+*.gz
+*.zip
+
+###########################
+# Jupyter Notebooks
+###########################
+.ipynb_checkpoints/
+*.ipynb_save
+
+###########################
+# IDE / Editor Config
+###########################
+.vscode/
+.idea/
+*.swp
+*.swo
+
+###########################
+# Streamlit / Gradio / Local UI
+###########################
+**/.streamlit/
+.cache/
+.gradio/
+
+###########################
+# Logs
+###########################
+logs/
+*.log
+
+###########################
+# Mac / OS-specific Files
+###########################
+.DS_Store
+.AppleDouble
+.LSOverride
+Thumbs.db
+
+###########################
+# Temporary Files
+###########################
+*.tmp
+*.temp
+*~
+*.bak
+
+###########################
+# Your Specific File
+# (exclude the planning file from Git)
+###########################
+codenames_spymaster_plan_cac34ae4.plan.md

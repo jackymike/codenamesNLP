@@ -1,0 +1,42 @@
+[build-system]
+requires = ["setuptools>=64", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "codenames-spymaster"
+version = "0.1.0"
+description = "Gradient-based Codenames spymaster with embeddings, ML guesser, and Streamlit UI."
+authors = [{ name = "Your Name", email = "you@example.com" }]
+readme = "README.md"
+requires-python = ">=3.11"
+license = { file = "LICENSE" }
+dependencies = [
+  "torch>=2.2.0",
+  "numpy>=1.25.0",
+  "scikit-learn>=1.3.0",
+  "streamlit>=1.31.0",
+  "fastapi>=0.110.0",
+  "uvicorn[standard]>=0.27.0",
+]
+
+[project.optional-dependencies]
+dev = [
+  "pytest>=7.4",
+  "ruff>=0.4.0",
+]
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py311"
+
+[tool.pytest.ini_options]
+addopts = "-q"
+pythonpath = ["src"]
+
+
